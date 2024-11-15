@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class GradingSystem {
+    public static void main(String[] args) {
+        String assessment;
+        int examscore;
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Enter exam score: ");
+        examscore = keyboard.nextInt();
+        
+        {
+        if (examscore >= 90) {
+            System.out.println(assessment = "Grade is A");
+        } else if (examscore < 90 && examscore >= 80) {
+            System.out.println(assessment = "Grade is B");
+        } else if (examscore < 80 && examscore >= 70) {        
+            System.out.println(assessment = "Grade is C");
+        } else if (examscore < 70 && examscore >= 60) {        
+            System.out.println(assessment = "Grade is D");
+        } else if (examscore < 60) {        
+            System.out.println(assessment = "Grade is F");
+            }
+        }
+    }
+}
